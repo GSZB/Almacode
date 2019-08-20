@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, arial, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+div, p, a, span, button {
+    box-sizing: border-box;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.header {
+    background: url('../img/water-555065.jpg');
+    background: -moz-linear-gradient(left, rgba(74,125,252,1) 0%, rgba(17,72,212,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(74,125,252,1)), color-stop(100%, rgba(17,72,212,1)));
+    background: -webkit-linear-gradient(left, rgba(74,125,252,1) 0%, rgba(17,72,212,1) 100%);
+    background: -o-linear-gradient(left, rgba(74,125,252,1) 0%, rgba(17,72,212,1) 100%);
+    background: -ms-linear-gradient(left, rgba(74,125,252,1) 0%, rgba(17,72,212,1) 100%);
+    background: linear-gradient(to right, rgba(74,125,252,1) 0%, rgba(17,72,212,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a7dfc', endColorstr='#1148d4', GradientType=1 );
+    color: white;
+    padding-top: 69px;
+    padding-bottom: 61px;
+}
+
+.header__logo {
+    display: block;
+    text-align: center;
+}
+
+.professional {
+    width: 620px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.professional__title {
+    padding-top: 24px;
+    padding-bottom: 19px;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 0.02em;
+    line-height: 1.45em;
+}
+
+.professional__button {
+    width: 217px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+.professional__button:hover {
+    background: #fff;
+    color: #265ce2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.professional__button:active {
+    box-shadow: 0 0 20px rgba(0,0,0,0.50) inset;
+    transition: none;
+}
+
+.header__arrow {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 169px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.about {
+    padding-top: 108px;
+    -webkit-box-shadow: 0px -60px 56px -35px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px -60px 56px -35px rgba(0,0,0,0.55);
+    box-shadow: 0px -40px 60px -35px rgba(0,0,0,0.50);
+}
+
+.about__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding-bottom: 78px;
+}
+
+.mission {
+    width: 540px;
+}
+
+.mission__title {
+    margin-bottom: 33px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.mission__text {
+    padding-bottom: 23px;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+.merits {
+    width: 460px;
+    margin-left: 65px;
+}
+
+.merits__title {
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.merits__icon {
+    display: flex;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.merits__icon_bug {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: #2d63eb url('../img/bug.png') no-repeat center center;
+    margin-right: 23px;
+    margin-bottom: 26px;
+}
+
+.merits__icon_bell {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: #2d63eb url('../img/bell.png') no-repeat center center;
+    margin-right: 23px;
+    margin-bottom: 26px;
+}
+
+.merits__icon_lightning {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: #2d63eb url('../img/storm.png') no-repeat center center;
+    margin-right: 23px;
+    margin-bottom: 26px;
+}
+
+.merits__icon_camera {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: #2d63eb url('../img/camera.png') no-repeat center center;
+    margin-right: 23px;
+    margin-bottom: 26px;
+}
+
+.merits__cell {
+    display: flex;
+}
+
+.mission__title::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: #2d63eb;
+    margin-top: 24px;
+    margin-left: 1px;
+}
+
+.merits__title::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: #2d63eb;
+    margin-top: 24px;
+    margin-left: 3px;
+}
+
+.merits__text h4 {
+    font-size: 16px;
+    color: #2d63eb;
+}
+
+.merits__text p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #9ba0a1;
+}
+
+.merits__icon {
+    display: block;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.reasons {
+    padding-top: 91px;
+    padding-bottom: 121px;
+}
+
+.reasons__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.numbers__holder {
+    margin-left: 60px;
+}
+
+.reasons .circle__item {
+    display: flex;
+    border: solid 1px #ffa200;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffa200;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.reasons .circle__item:hover {
+    background: #ffa200;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.reasons .circle__item:active {
+    box-shadow: 0 0 20px rgba(0,0,0,0.50) inset;
+    transition: none;
+}
+
+.numbers {
+    display: flex;
+    width: 880px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 66px;
+}
+
+.numbers__name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+} 
+
+.contacts {
+    background: #e6e9f1;
+    padding-top: 109px;
+    padding-bottom: 112px;
+    text-align: center;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 18px;
+}
+
+.contacts__text {
+    display: block;
+    width: 420px;
+    font-size: 14px;
+    line-height: 1.7em;
+    padding-bottom: 23px;
+    margin: 0 auto;
+}
+
+.contacts__button {
+    width: 217px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: #2d63eb;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contacts__button:hover {
+    background: #1E319E;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.contacts__button:active {
+    box-shadow: 0 0 20px rgba(0,0,0,0.50);
+}
+
+.footer {
+    background: #06319e;
+    color: #eff0f7;
+    font-size: 13px;
+    padding: 48px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__confidence {
+    text-decoration: none;
+    color: #eff0f7;
+    border-bottom: 1px dotted #fff;
+}
+
+.footer__name {
+    padding-left: 40px;
+}
